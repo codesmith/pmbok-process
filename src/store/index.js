@@ -5,7 +5,21 @@ import router from '../router';
 Vue.use(Vuex);
 
 const inputsTableElements = [
-  { ittoNumber: 1, name: "プロジェクト憲章の作成", targetProcesses: [1, 3] }
+  { name: "プロジェクト憲章", targetProcesses: [1, 3] },
+  { name: "スコープマネジメント計画書", targetProcesses: [1, 3] },
+  { name: "要求事項マネジメント計画書", targetProcesses: [1, 3] },
+
+  { name: "スケジュールマネジメント計画書", targetProcesses: [1, 3] },
+  { name: "コストマネジメント計画書", targetProcesses: [1, 3] },
+  { name: "品質マネジメント計画書", targetProcesses: [1, 3] },
+  { name: "資源マネジメント計画書", targetProcesses: [1, 3] },
+  { name: "コミュニケーションマネジメント計画書", targetProcesses: [1, 3] },
+  { name: "調達マネジメント計画書", targetProcesses: [1, 3] },
+
+  { name: "ステークホルダーエンゲージメント計画書", targetProcesses: [1, 3] },
+  { name: "変更マネジメント計画書", targetProcesses: [1, 3] },
+  { name: "コンフィギュレーションマネジメント計画書", targetProcesses: [1, 3] },
+
 ];
 
 export default new Vuex.Store({

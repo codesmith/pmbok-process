@@ -11,6 +11,11 @@
           <router-link to="/processes">・プロジェクト憲章</router-link>
         </td>
       </tr>
+      <tr v-for="inputsTableElement in this.$store.state.inEl" :key="inputsTableElement.name">
+        <td>
+          <router-link to="/processes">・{{inputsTableElement["name"]}}</router-link>
+        </td>
+      </tr>
       <tr>
         <td>
           ・プロジェクトマネジメント計画書
@@ -146,6 +151,7 @@ thead > tr > td {
 }
 td {
   text-align: left;
+  border-width: 0px;
 }
 </style>
 
