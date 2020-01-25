@@ -6,7 +6,10 @@
           <td class="tableTitle">インプット</td>
         </tr>
       </thead>
-      <tr v-for="inputsTableElement in this.$store.state.inEl" :key="inputsTableElement.name">
+      <tr
+        v-for="inputsTableElement in this.$store.state.inputsTableElements"
+        :key="inputsTableElement.name"
+      >
         <td>
           <router-link to="/processes">・{{inputsTableElement.name}}</router-link>
         </td>

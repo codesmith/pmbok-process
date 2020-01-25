@@ -4,7 +4,7 @@ import router from '../router';
 
 Vue.use(Vuex);
 
-const inputsTableElements = [
+const inputsOutputsTableElements = [
   { name: "プロジェクト憲章", targetProcesses: [1, 3] },
   { name: "スコープマネジメント計画書", targetProcesses: [1, 3] },
   { name: "要求事項マネジメント計画書", targetProcesses: [1, 3] },
@@ -87,7 +87,7 @@ const inputsTableElements = [
 
 export default new Vuex.Store({
   state: {
-    inEl: inputsTableElements,
+    inputsTableElements: inputsOutputsTableElements,
   },
   getters: {
     inputsTableElements: state => state.inputsTableElements,

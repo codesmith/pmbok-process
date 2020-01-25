@@ -19,7 +19,9 @@ export default {
   },
   computed: {
     inputsTableEl() {
-      let targetProcesses = this.$store.state.inEl[0]["targetProcesses"];
+      let targetProcesses = this.$store.state.inputsTableElements[0][
+        "targetProcesses"
+      ];
       return targetProcesses;
     }
   },
