@@ -3,6 +3,7 @@
     <InputsTable></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
+    <p>{{$route.params.value}}</p>
   </div>
 </template>
 

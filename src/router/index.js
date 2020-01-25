@@ -22,7 +22,7 @@ const routes = [
     component: Processes
   },
   {
-    path: '/itto',
+    path: '/itto/:value',
     name: 'itto',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

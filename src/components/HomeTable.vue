@@ -17,7 +17,7 @@
       <tr>
         <td class="knowledge-are-title">統合マネジメント</td>
         <td>
-          <router-link to="/itto">プロジェクト憲章の作成</router-link>
+          <router-link :to="{ name: 'itto', params: { value: 'test value' }}">プロジェクト憲章の作成</router-link>
         </td>
         <td>プロジェクトマネジメント計画書の作成</td>
         <td>
