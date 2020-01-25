@@ -7,11 +7,14 @@
         </tr>
       </thead>
       <tr
-        v-for="inputsTableElement in this.$store.state.inputsTableElements"
+        v-for="(inputsTableElement, index) in this.$store.state.inputsTableElements"
         :key="inputsTableElement.name"
       >
         <td>
-          <router-link to="/processes">・{{inputsTableElement.name}}</router-link>
+          <router-link
+            to="/processes"
+            :class="{'active': inputsTableElement.inputProcesses.includes(index), 'inactive': !inputsTableElement.inputProcesses.includes(index)}"
+          >・{{inputsTableElement.name}}</router-link>
         </td>
       </tr>
     </table>
@@ -28,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+.active {
+  color: red;
+  font-size: large;
+}
 a {
   text-decoration: none;
 }

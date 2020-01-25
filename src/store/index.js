@@ -5,20 +5,20 @@ import router from '../router';
 Vue.use(Vuex);
 
 const inputsOutputsTableElements = [
-  { name: "プロジェクト憲章", targetProcesses: [1, 3] },
-  { name: "スコープマネジメント計画書", targetProcesses: [1, 3] },
-  { name: "要求事項マネジメント計画書", targetProcesses: [1, 3] },
+  { name: "プロジェクト憲章", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "スコープマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "要求事項マネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
 
-  { name: "スケジュールマネジメント計画書", targetProcesses: [1, 3] },
-  { name: "コストマネジメント計画書", targetProcesses: [1, 3] },
-  { name: "品質マネジメント計画書", targetProcesses: [1, 3] },
-  { name: "資源マネジメント計画書", targetProcesses: [1, 3] },
-  { name: "コミュニケーションマネジメント計画書", targetProcesses: [1, 3] },
-  { name: "調達マネジメント計画書", targetProcesses: [1, 3] },
+  { name: "スケジュールマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "コストマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "品質マネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "資源マネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "コミュニケーションマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "調達マネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
 
-  { name: "ステークホルダーエンゲージメント計画書", targetProcesses: [1, 3] },
-  { name: "変更マネジメント計画書", targetProcesses: [1, 3] },
-  { name: "コンフィギュレーションマネジメント計画書", targetProcesses: [1, 3] },
+  { name: "ステークホルダーエンゲージメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "変更マネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { name: "コンフィギュレーションマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { name: "アクティビティ属性", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { name: "アクティビティリスト", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { name: "前提条件ログ", inputProcesses: [1, 3], outputProcesses: [1, 3], },
@@ -151,7 +151,6 @@ const tandtTableElements = [
   { name: "入札説明会", usedProcesses: [1, 3] },
   { name: "クレーム管理", usedProcesses: [1, 3] },
   { name: "行動規範", usedProcesses: [1, 3] },
-
 ];
 
 export default new Vuex.Store({

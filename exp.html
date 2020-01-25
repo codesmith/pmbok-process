@@ -25,9 +25,9 @@
         <td>2</td>
       </tr>
     </table>
-    <table v-for="el in abc">
+    <table v-for="(el, index) in abc">
       <tr>
-        <td>{{el}}</td>
+        <td :class="{'active': abc.includes(el)}">{{el}}</td>
       </tr>
     </table>
     <ul>
