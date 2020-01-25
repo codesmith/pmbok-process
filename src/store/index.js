@@ -4,11 +4,13 @@ import router from '../router';
 
 Vue.use(Vuex);
 
-
+const inputsTableElements = [
+  { ittoNumber: 1, name: "プロジェクト憲章の作成", targetProcesses: [1, 3] }
+];
 
 export default new Vuex.Store({
   state: {
-    inputsTableElements: "project charter",
+    inEl: inputsTableElements,
   },
   getters: {
     inputsTableElements: state => state.inputsTableElements,
