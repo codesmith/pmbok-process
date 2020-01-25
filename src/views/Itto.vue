@@ -1,9 +1,9 @@
 <template>
   <div class="itto">
+    <p>{{$route.params.value}}</p>
     <InputsTable></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
-    <p>{{$route.params.value}}</p>
   </div>
 </template>
 
