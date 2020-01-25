@@ -7,11 +7,11 @@
         </tr>
       </thead>
       <tr>
-        <td>プロジェクト憲章</td>
+        <td>・プロジェクト憲章</td>
       </tr>
       <tr>
         <td>
-          プロジェクトマネジメント計画書
+          ・プロジェクトマネジメント計画書
           <p>・スコープマネジメント計画書</p>
           <p>・要求事項マネジメント計画書</p>
           <p>・スケジュールマネジメント計画書</p>
@@ -66,7 +66,7 @@ a {
   text-decoration: none;
 }
 p {
-  text-indent: 10px;
+  text-indent: 1.5em;
   margin: 0;
   padding: 0 0 0 10px;
 }
@@ -81,6 +81,12 @@ table {
 #output {
   float: left;
   padding: 0 0 0 30px;
+}
+thead > tr > td {
+  text-align: center;
+}
+td {
+  text-align: left;
 }
 </style>
 
