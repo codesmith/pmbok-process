@@ -16,7 +16,9 @@
       </thead>
       <tr>
         <td class="knowledge-are-title">統合マネジメント</td>
-        <td>プロジェクト憲章の作成</td>
+        <td>
+          <router-link to="/processes">プロジェクト憲章の作成</router-link>
+        </td>
         <td>プロジェクトマネジメント計画書の作成</td>
         <td>
           プロジェクト作業の指揮マネジメント
@@ -152,6 +154,6 @@ export default {
   font-weight: bold;
 }
 a {
-  color: #42b983;
+  text-decoration: none;
 }
 </style>
