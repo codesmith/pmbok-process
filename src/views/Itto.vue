@@ -1,7 +1,6 @@
 <template>
   <div class="itto">
     <p>{{$route.params.value}}</p>
-    <p>{{ inputsTableEl }}</p>
     <InputsTable></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
@@ -17,14 +16,14 @@ export default {
   props: {
     msg: String
   },
-  computed: {
-    inputsTableEl() {
-      let targetProcesses = this.$store.state.inputsTableElements[0][
-        "targetProcesses"
-      ];
-      return targetProcesses;
-    }
-  },
+  // computed: {
+  //   inputsTableEl() {
+  //     let targetProcesses = this.$store.state.inputsTableElements[0][
+  //       "targetProcesses"
+  //     ];
+  //     return targetProcesses;
+  //   }
+  // },
   components: {
     InputsTable,
     OutputsTable,
