@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/home">Home</router-link>|
-      <router-link to="/processes">Processes</router-link>
+      <router-link to="/itto">ITTO</router-link>
     </div>
     <router-view />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="processes">
+  <div class="itto">
     <InputsTable></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
@@ -11,7 +11,7 @@ import InputsTable from "@/views/tables/InputsTable.vue";
 import OutputsTable from "@/views/tables/OutputsTable.vue";
 import TandtTable from "@/views/tables/TandtTable.vue";
 export default {
-  name: "processes",
+  name: "itto",
   props: {
     msg: String
   },
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-.processes {
+.itto {
   position: absolute;
   align-self: center;
 }
