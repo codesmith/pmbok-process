@@ -4,12 +4,14 @@ import router from '../router';
 
 Vue.use(Vuex);
 
+
+
 export default new Vuex.Store({
   state: {
-    idToken: null,
+    inputsTableElements: "project charter",
   },
   getters: {
-    idToken: state => state.idToken,
+    inputsTableElements: state => state.inputsTableElements,
   },
   mutations: {
     updateIdToken(state, idToken) {

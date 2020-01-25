@@ -1,6 +1,7 @@
 <template>
   <div class="itto">
     <p>{{$route.params.value}}</p>
+    <p>{{inputsTableElements}}</p>
     <InputsTable></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
@@ -15,6 +16,11 @@ export default {
   name: "itto",
   props: {
     msg: String
+  },
+  computed: {
+    inputsTableElements() {
+      return this.$store.state.inputsTableElements;
+    }
   },
   components: {
     InputsTable,
