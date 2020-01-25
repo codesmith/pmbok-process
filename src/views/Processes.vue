@@ -76,14 +76,8 @@ table {
 .processes {
   padding: 0 0 0 30px;
 }
-#input {
-  float: left;
-  padding: 0 0 0 30px;
-}
-#tandt {
-  float: left;
-  padding: 0 0 0 30px;
-}
+#input,
+#tandt,
 #output {
   float: left;
   padding: 0 0 0 30px;
