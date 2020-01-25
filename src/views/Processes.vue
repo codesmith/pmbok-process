@@ -1,36 +1,6 @@
 <template>
   <div class="processes">
-    <table id="input" border="3" style="border-collapse: collapse; border-color:black">
-      <thead>
-        <tr bgcolor="orange">
-          <td>インプット</td>
-        </tr>
-      </thead>
-      <tr>
-        <td>・プロジェクト憲章</td>
-      </tr>
-      <tr>
-        <td>
-          ・プロジェクトマネジメント計画書
-          <p>・スコープマネジメント計画書</p>
-          <p>・要求事項マネジメント計画書</p>
-          <p>・スケジュールマネジメント計画書</p>
-          <p>・コストマネジメント計画書</p>
-          <p>・品質マネジメント計画書</p>
-          <p>・資源マネジメント計画書</p>
-          <p>・コミュニケーションマネジメント計画書</p>
-          <p>・調達マネジメント計画書</p>
-          <p>・ステークホルダーエンゲージメント計画書</p>
-          <p>・変更マネジメント計画書</p>
-          <p>・コンフィギュレーションマネジメント計画書</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td></td>
-      </tr>
-    </table>
-
+    <InputsTable></InputsTable>
     <table id="tandt">
       <thead>
         <tr bgcolor="orange">
@@ -39,31 +9,26 @@
       </thead>
     </table>
 
-    <table id="output">
-      <thead>
-        <tr bgcolor="orange">
-          <td>アウトプット</td>
-        </tr>
-      </thead>
-    </table>
+    <OutputsTable></OutputsTable>
   </div>
 </template>
 
 <script>
+import InputsTable from "@/views/tables/InputsTable.vue";
+import OutputsTable from "@/views/tables/OutputsTable.vue";
 export default {
   name: "processes",
   props: {
     msg: String
+  },
+  components: {
+    InputsTable,
+    OutputsTable
   }
 };
 </script>
 
 <style scoped>
-.knowledge-are-title {
-  background-color: #66cc99;
-  font-size: large;
-  font-weight: bold;
-}
 a {
   text-decoration: none;
 }
@@ -78,9 +43,8 @@ table {
 .processes {
   padding: 0 0 0 30px;
 }
-#input,
-#tandt,
-#output {
+
+#tandt {
   float: left;
   padding: 0 0 0 30px;
 }
