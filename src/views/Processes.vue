@@ -24,27 +24,7 @@ export default {
 </script>
 
 <style scoped>
-a {
-  text-decoration: none;
-}
-p {
-  text-indent: 1.5em;
-  margin: 0;
-  padding: 0 0 0 10px;
-}
-table {
-  width: 400px;
-}
 .processes {
   position: absolute;
   align-self: center;
 }
-
-thead > tr > td {
-  text-align: center;
-}
-td {
-  text-align: left;
-}
-</style>
-
