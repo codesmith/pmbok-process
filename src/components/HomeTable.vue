@@ -150,8 +150,14 @@ export default {
 <style scoped>
 .knowledge-are-title {
   background-color: #66cc99;
-  font-size: large;
+  font-size: 110%;
   font-weight: bold;
+}
+thead > tr > td {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 110%;
 }
 a {
   text-decoration: none;

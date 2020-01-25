@@ -139,6 +139,9 @@ table {
 }
 thead > tr > td {
   text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 110%;
 }
 td {
   text-align: left;

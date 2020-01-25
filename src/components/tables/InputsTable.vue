@@ -3,7 +3,7 @@
     <table border="3" style="border-collapse: collapse; border-color:black">
       <thead>
         <tr bgcolor="orange">
-          <td>インプット</td>
+          <td class="tableTitle">インプット</td>
         </tr>
       </thead>
       <tr>
@@ -140,6 +140,9 @@ table {
 }
 thead > tr > td {
   text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 110%;
 }
 td {
   text-align: left;
