@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tr>
-        <td>統合マネジメント</td>
+        <td class="knowledge-are-title">統合マネジメント</td>
         <td>プロジェクト憲章の作成</td>
         <td>プロジェクトマネジメント計画書の作成</td>
         <td>
@@ -29,7 +29,7 @@
         <td>プロジェクトやフェーズの終結</td>
       </tr>
       <tr>
-        <td>スコープマネジメント</td>
+        <td class="knowledge-are-title">スコープマネジメント</td>
         <td></td>
         <td>
           スコープマネジメントの計画
@@ -45,7 +45,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>スケジュールマネジメント</td>
+        <td class="knowledge-are-title">スケジュールマネジメント</td>
         <td></td>
         <td>
           スケジュールマネジメントの計画
@@ -59,7 +59,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>コストマネジメント</td>
+        <td class="knowledge-are-title">コストマネジメント</td>
         <td></td>
         <td>
           コストマネジメントの計画
@@ -71,7 +71,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>品質マネジメント</td>
+        <td class="knowledge-are-title">品質マネジメント</td>
         <td></td>
         <td>品質マネジメントの計画</td>
         <td>品質のマネジメント</td>
@@ -79,7 +79,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>資源マネジメント</td>
+        <td class="knowledge-are-title">資源マネジメント</td>
         <td></td>
         <td>
           資源マネジメントの計画
@@ -94,7 +94,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>コミュニケーションマネジメント</td>
+        <td class="knowledge-are-title">コミュニケーションマネジメント</td>
         <td></td>
         <td>コミュニケーションマネジメントの計画</td>
         <td>コミュニケーションのマネジメント</td>
@@ -102,7 +102,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>リスクマネジメント</td>
+        <td class="knowledge-are-title">リスクマネジメント</td>
         <td></td>
         <td>
           リスクマネジメントの計画
@@ -116,7 +116,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>調達マネジメント</td>
+        <td class="knowledge-are-title">調達マネジメント</td>
         <td></td>
         <td>調達マネジメントの計画</td>
         <td>調達の実行</td>
@@ -124,7 +124,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>ステークホルダーマネジメント</td>
+        <td class="knowledge-are-title">ステークホルダーマネジメント</td>
         <td>ステークホルダーの特定</td>
         <td>ステークホルダーエンゲージメントの計画</td>
         <td>ステークホルダーエンゲージメントのマネジメント</td>
@@ -146,16 +146,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
+.knowledge-are-title {
+  background-color: #66cc99;
+  font-size: large;
+  font-weight: bold;
 }
 a {
   color: #42b983;
