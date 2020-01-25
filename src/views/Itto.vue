@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import InputsTable from "@/views/tables/InputsTable.vue";
-import OutputsTable from "@/views/tables/OutputsTable.vue";
-import TandtTable from "@/views/tables/TandtTable.vue";
+import InputsTable from "@/components/tables/InputsTable.vue";
+import OutputsTable from "@/components/tables/OutputsTable.vue";
+import TandtTable from "@/components/tables/TandtTable.vue";
 export default {
   name: "itto",
   props: {

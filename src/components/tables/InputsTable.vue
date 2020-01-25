@@ -8,7 +8,7 @@
       </thead>
       <tr>
         <td>
-          <router-link to="/">・プロジェクト憲章</router-link>
+          <router-link to="/processes">・プロジェクト憲章</router-link>
         </td>
       </tr>
       <tr>
