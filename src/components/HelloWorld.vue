@@ -1,42 +1,147 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div id="hello">
+    <table border="3" style="border-collapse: collapse; border-color:black">
+      <thead>
+        <tr bgcolor="orange">
+          <td>
+            プロセス群→
+            <br />↓知識エリア
+          </td>
+          <td>立ち上げ</td>
+          <td>計画</td>
+          <td>実行</td>
+          <td>監視・コントロール</td>
+          <td>終結</td>
+        </tr>
+      </thead>
+      <tr>
+        <td>統合マネジメント</td>
+        <td>プロジェクト憲章の作成</td>
+        <td>プロジェクトマネジメント計画書の作成</td>
+        <td>
+          プロジェクト作業の指揮マネジメント
+          <br />プロジェクト知識のマネジメント
+        </td>
+        <td>
+          プロジェクト作業の監視・コントロール
+          <br />統合変更管理
+        </td>
+        <td>プロジェクトやフェーズの終結</td>
+      </tr>
+      <tr>
+        <td>スコープマネジメント</td>
+        <td></td>
+        <td>
+          スコープマネジメントの計画
+          <br />要求事項の収集
+          <br />スコープの定義
+          <br />WBSの作成
+        </td>
+        <td></td>
+        <td>
+          スコープの妥当性確認
+          <br />スコープのコントロール
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>スケジュールマネジメント</td>
+        <td></td>
+        <td>
+          スケジュールマネジメントの計画
+          <br />アクティビティの定義
+          <br />アクティビティの順序設定
+          <br />アクティビティの所要期間見積り
+          <br />スケジュールの作成
+        </td>
+        <td></td>
+        <td>スケジュールのコントロール</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>コストマネジメント</td>
+        <td></td>
+        <td>
+          コストマネジメントの計画
+          <br />コストの見積り
+          <br />予算の設定
+        </td>
+        <td></td>
+        <td>コストのコントロール</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>品質マネジメント</td>
+        <td></td>
+        <td>品質マネジメントの計画</td>
+        <td>品質のマネジメント</td>
+        <td>品質のコントロール</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>資源マネジメント</td>
+        <td></td>
+        <td>
+          資源マネジメントの計画
+          <br />アクティビティ資源の見積り
+        </td>
+        <td>
+          資源の獲得
+          <br />チームの育成
+          <br />チームのマネジメント
+        </td>
+        <td>資源のコントロール</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>コミュニケーションマネジメント</td>
+        <td></td>
+        <td>コミュニケーションマネジメントの計画</td>
+        <td>コミュニケーションのマネジメント</td>
+        <td>コミュニケーションの監視</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>リスクマネジメント</td>
+        <td></td>
+        <td>
+          リスクマネジメントの計画
+          <br />リスクの特定
+          <br />リスクの定性的分析
+          <br />リスクの定量的分析
+          <br />リスク対応の計画
+        </td>
+        <td>リスク対応策の実行</td>
+        <td>リスクの監視</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>調達マネジメント</td>
+        <td></td>
+        <td>調達マネジメントの計画</td>
+        <td>調達の実行</td>
+        <td>調達のコントロール</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ステークホルダーマネジメント</td>
+        <td>ステークホルダーの特定</td>
+        <td>ステークホルダーエンゲージメントの計画</td>
+        <td>ステークホルダーエンゲージメントのマネジメント</td>
+        <td>ステークホルダーエンゲージメントの監視</td>
+        <td></td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
