@@ -135,6 +135,7 @@ table {
 #OutputsTable {
   float: left;
   padding: 0 0 0 30px;
+  margin: 10px;
 }
 thead > tr > td {
   text-align: center;

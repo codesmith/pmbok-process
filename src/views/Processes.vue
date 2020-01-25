@@ -36,13 +36,10 @@ table {
   width: 400px;
 }
 .processes {
-  padding: 0 0 0 30px;
+  position: absolute;
+  align-self: center;
 }
 
-#tandt {
-  float: left;
-  padding: 0 0 0 30px;
-}
 thead > tr > td {
   text-align: center;
 }
