@@ -3,7 +3,7 @@
     <table border="3" style="border-collapse: collapse; border-color:black">
       <thead>
         <tr bgcolor="orange">
-          <td>アウトプット</td>
+          <td class="tableTitle">アウトプット</td>
         </tr>
       </thead>
       <tr
@@ -13,7 +13,10 @@
         <td>
           <router-link
             to="/processes"
-            :class="{'active': outputsTableElement.outputProcesses.includes(index), 'inactive': !outputsTableElement.outputProcesses.includes(index)}"
+            :class="{
+              'active': routedProcessesElement.outputs.includes(index),
+              'inactive': !routedProcessesElement.outputs.includes(index)
+            }"
           >・{{index}}{{outputsTableElement.name}}</router-link>
         </td>
       </tr>
@@ -25,12 +28,16 @@
 export default {
   name: "OutputsTable",
   props: {
-    msg: String
+    routedProcessesElement: String
   }
 };
 </script>
 
 <style scoped>
+.active {
+  color: red;
+  font-size: large;
+}
 a {
   text-decoration: none;
 }

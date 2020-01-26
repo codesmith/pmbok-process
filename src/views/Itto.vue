@@ -2,8 +2,8 @@
   <div class="itto">
     <p>{{routedProcessesElement.name}}</p>
     <InputsTable :routedProcessesElement="routedProcessesElement"></InputsTable>
-    <TandtTable></TandtTable>
-    <OutputsTable></OutputsTable>
+    <TandtTable :routedProcessesElement="routedProcessesElement"></TandtTable>
+    <OutputsTable :routedProcessesElement="routedProcessesElement"></OutputsTable>
   </div>
 </template>
 
