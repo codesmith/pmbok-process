@@ -11,7 +11,13 @@
         :key="tandtTableElement.name"
       >
         <td>
-          <router-link to="/processes">・{{index}}{{tandtTableElement.name}}</router-link>
+          <router-link
+            to="/processes"
+            :class="{
+              'active': routedProcessesElement.tandt.includes(index), 
+              'inactive': !routedProcessesElement.tandt.includes(index)
+            }"
+          >・{{index}}{{tandtTableElement.name}}</router-link>
         </td>
       </tr>
     </table>
@@ -22,12 +28,16 @@
 export default {
   name: "tandtTable",
   props: {
-    msg: String
+    routedProcessesElement: String
   }
 };
 </script>
 
 <style scoped>
+.active {
+  color: red;
+  font-size: large;
+}
 a {
   text-decoration: none;
 }
