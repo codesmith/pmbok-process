@@ -1,7 +1,7 @@
 <template>
   <div class="itto">
-    <p>{{$route.params.value}}</p>
-    <InputsTable></InputsTable>
+    <p>{{routedProcessesElement.name}}</p>
+    <InputsTable :routedProcessesElement="routedProcessesElement"></InputsTable>
     <TandtTable></TandtTable>
     <OutputsTable></OutputsTable>
   </div>
@@ -16,14 +16,12 @@ export default {
   props: {
     msg: String
   },
-  // computed: {
-  //   inputsTableEl() {
-  //     let targetProcesses = this.$store.state.inputsTableElements[0][
-  //       "targetProcesses"
-  //     ];
-  //     return targetProcesses;
-  //   }
-  // },
+  computed: {
+    routedProcessesElement() {
+      const processesElements = this.$store.state.processesElements;
+      return processesElements[this.$route.params.value];
+    }
+  },
   components: {
     InputsTable,
     OutputsTable,

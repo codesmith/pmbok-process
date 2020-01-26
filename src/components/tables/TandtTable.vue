@@ -7,11 +7,11 @@
         </tr>
       </thead>
       <tr
-        v-for="tandtTableElement in this.$store.state.tandtTableElements"
+        v-for="(tandtTableElement, index) in this.$store.state.tandtTableElements"
         :key="tandtTableElement.name"
       >
         <td>
-          <router-link to="/processes">・{{tandtTableElement.name}}</router-link>
+          <router-link to="/processes">・{{index}}{{tandtTableElement.name}}</router-link>
         </td>
       </tr>
     </table>

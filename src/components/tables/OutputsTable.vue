@@ -7,11 +7,14 @@
         </tr>
       </thead>
       <tr
-        v-for="outputsTableElement in this.$store.state.outputsTableElements"
+        v-for="(outputsTableElement, index) in this.$store.state.outputsTableElements"
         :key="outputsTableElement.name"
       >
         <td>
-          <router-link to="/processes">・{{outputsTableElement.name}}</router-link>
+          <router-link
+            to="/processes"
+            :class="{'active': outputsTableElement.outputProcesses.includes(index), 'inactive': !outputsTableElement.outputProcesses.includes(index)}"
+          >・{{index}}{{outputsTableElement.name}}</router-link>
         </td>
       </tr>
     </table>
