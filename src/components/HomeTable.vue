@@ -17,20 +17,45 @@
       <tr>
         <td class="knowledge-are-title">統合マネジメント</td>
         <td>
+          <!-- プロジェクト憲章 -->
           <router-link
             :to="{ name: 'itto', params: { value: 0 }}"
           >{{this.$store.state.processesElements[0].name}}</router-link>
         </td>
-        <td>プロジェクトマネジメント計画書の作成</td>
         <td>
-          プロジェクト作業の指揮マネジメント
-          <br />プロジェクト知識のマネジメント
+          <!-- プロジェクトマネジメント計画書の作成 -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 1 }}"
+          >{{this.$store.state.processesElements[1].name}}</router-link>
         </td>
         <td>
-          プロジェクト作業の監視・コントロール
-          <br />統合変更管理
+          <!-- プロジェクト作業の指揮マネジメント -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 2 }}"
+          >{{this.$store.state.processesElements[2].name}}</router-link>
+          <br />
+          <!-- プロジェクト知識のマネジメント -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 3 }}"
+          >{{this.$store.state.processesElements[3].name}}</router-link>
         </td>
-        <td>プロジェクトやフェーズの終結</td>
+        <td>
+          <!-- プロジェクト作業の監視・コントロール -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 4 }}"
+          >{{this.$store.state.processesElements[4].name}}</router-link>
+          <br />
+          <!-- 統合変更管理 -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 5 }}"
+          >{{this.$store.state.processesElements[5].name}}</router-link>
+        </td>
+        <td>
+          <!-- プロジェクトやフェーズの終結 -->
+          <router-link
+            :to="{ name: 'itto', params: { value: 6 }}"
+          >{{this.$store.state.processesElements[6].name}}</router-link>
+        </td>
       </tr>
       <tr>
         <td class="knowledge-are-title">スコープマネジメント</td>
