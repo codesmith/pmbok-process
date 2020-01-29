@@ -8,11 +8,11 @@ const processesTableElements = [
   // 統合マネジメント
   { psNum: 0, name: "プロジェクト憲章の作成", inputs: [46, 45, 47, 48, 49], tandt: [0, 15, 1, 2], outputs: [0, 14], updates: [] },
   { psNum: 1, name: "プロジェクトマネジメント計画書の作成", inputs: [0, 48, 49], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], updates: [] },
-  { psNum: 2, name: "プロジェクト作業の指揮マネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 21, 22, 25, 26, 34, 38, 39, 55, 48, 49], tandt: [0, 3, 2], outputs: [50, 51, 20, 54], updates: [] },
-  { psNum: 3, name: "プロジェクト知識のマネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 21, 29, 35, 42], tandt: [0, 13, 14, 1], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 4, name: "プロジェクト作業の監視・コントロール", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 5, name: "統合変更管理", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 6, name: "プロジェクトやフェーズの終結", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
+  { psNum: 2, name: "プロジェクト作業の指揮マネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 21, 22, 25, 26, 34, 38, 39, 55, 48, 49], tandt: [0, 3, 2], outputs: [50, 51, 20, 54], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 14, 21, 33, 38, 42, 49] },
+  { psNum: 3, name: "プロジェクト知識のマネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 21, 29, 35, 42, 50, 48, 49], tandt: [0, 13, 14, 1], outputs: [21], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 49] },
+  { psNum: 4, name: "プロジェクト作業の監視・コントロール", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 21, 18, 20, 22, 32, 38, 39, 52, 47, 48, 49], tandt: [0, 16, 18, 2], outputs: [53, 54,], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 20, 21, 38, 41] },
+  { psNum: 5, name: "統合変更管理", inputs: [10, 11, 1, 71, 72, 15, 34, 39, 53, 54, 48, 49], tandt: [0, 4, 16, 18, 2], outputs: [55], updates: [...Array(69).keys()].map(i => ++i) },
+  { psNum: 6, name: "プロジェクトやフェーズの終結", inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 16, 20, 21, 22, 25, 30, 32, 33, 38, 39, 56, 45, 46, 47, 61, 49], tandt: [0, 16, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [...Array(69).keys()].map(i => ++i) },
 
   // スコープマネジメント
   { psNum: 7, name: "スコープマネジメントの計画", inputs: [46, 45, 47, 48, 49], tandt: [0, 15, 1, 2], outputs: [0, 14], updates: [] },
@@ -148,9 +148,10 @@ const inputsOutputsTableElements = [
   { ioNum: 69, name: "終結済み調達", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { ioNum: 70, name: "スコープベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { ioNum: 71, name: "スケジュールベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
-  { ioNum: 72, name: "パフォーマンス測定ベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
-  { ioNum: 73, name: "プロジェクトライフサイクルの記述", inputProcesses: [1, 3], outputProcesses: [1, 3], },
-  { ioNum: 74, name: "開発アプローチ", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { ioNum: 72, name: "コストベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { ioNum: 73, name: "パフォーマンス測定ベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { ioNum: 74, name: "プロジェクトライフサイクルの記述", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { ioNum: 75, name: "開発アプローチ", inputProcesses: [1, 3], outputProcesses: [1, 3], },
 ];
 
 const tandtTableElements = [
