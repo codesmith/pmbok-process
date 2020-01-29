@@ -15,12 +15,12 @@ const processesTableElements = [
   { psNum: 6, name: "プロジェクトやフェーズの終結", inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 16, 20, 21, 22, 25, 30, 32, 33, 38, 39, 56, 45, 46, 47, 61, 49], tandt: [0, 16, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [...Array(69).keys()].map(i => ++i) },
 
   // スコープマネジメント
-  { psNum: 7, name: "スコープマネジメントの計画", inputs: [46, 45, 47, 48, 49], tandt: [0, 15, 1, 2], outputs: [0, 14], updates: [] },
-  { psNum: 8, name: "要求事項の収集", inputs: [0, 48, 49], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], updates: [] },
-  { psNum: 9, name: "スコープの定義", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 10, name: "WBSの作成", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 11, name: "スコープの妥当性確認", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 12, name: "スコープのコントロール", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
+  { psNum: 7, name: "スコープマネジメントの計画", inputs: [0, 5, 74, 75, 48, 49], tandt: [0, 16, 2], outputs: [1, 2], updates: [] },
+  { psNum: 8, name: "要求事項の収集", inputs: [0, 1, 2, 9, 14, 21, 42, 45, 47, 48, 49], tandt: [0, 15, 16, 18, 17, 1, 19, 20], outputs: [33, 34], updates: [] },
+  { psNum: 9, name: "スコープの定義", inputs: [0, 1, 14, 33, 38, 48, 49], tandt: [0, 16, 18, 1, 21], outputs: [28], updates: [14, 33, 34, 42] },
+  { psNum: 10, name: "WBSの作成", inputs: [1, 28, 33, 48, 49], tandt: [0, 22], outputs: [70], updates: [14, 33] },
+  { psNum: 11, name: "スコープの妥当性確認", inputs: [1, 2, 70, 21, 32, 33, 34, 57, 51], tandt: [23, 18], outputs: [56, 52, 54], updates: [21, 33, 34] },
+  { psNum: 12, name: "スコープのコントロール", inputs: [1, 2, 10, 11, 70, 73, 21, 33, 34, 51, 49], tandt: [16], outputs: [52, 54], updates: [1, 70, 71, 72, 73, 21, 33, 34] },
 
   // スケジュールマネジメント
   { psNum: 13, name: "スケジュールマネジメントの計画", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
