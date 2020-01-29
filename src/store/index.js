@@ -31,10 +31,10 @@ const processesTableElements = [
   { psNum: 18, name: "スケジュールのコントロール", inputs: [3, 71, 72, 73, 21, 24, 26, 40, 51, 49], tandt: [16, 34, 3, 35, 36], outputs: [52, 41, 54], updates: [3, 71, 72, 73, 14, 15, 21, 26, 36, 38, 40] },
 
   // コストマネジメント
-  { psNum: 19, name: "コストマネジメントの計画", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 20, name: "コストの見積り", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
-  { psNum: 21, name: "予算の設定", inputs: [0, 48, 49], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], updates: [] },
-  { psNum: 22, name: "コストのコントロール", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
+  { psNum: 19, name: "コストマネジメントの計画", inputs: [0, 3, 76, 48, 49], tandt: [0, 15, 16, 2], outputs: [4], updates: [] },
+  { psNum: 20, name: "コストの見積り", inputs: [4, 5, 70, 21, 26, 37, 38, 48, 49], tandt: [0, 28, 29, 30, 31, 16, 3, 18], outputs: [17, 15], updates: [14, 21, 38] },
+  { psNum: 21, name: "予算の設定", inputs: [4, 6, 70, 15, 17, 26, 38, 46, 45, 47, 48, 49], tandt: [0, 38, 16, 39, 40, 41], outputs: [72, 59], updates: [17, 26, 38] },
+  { psNum: 22, name: "コストのコントロール", inputs: [4, 72, 73, 21, 59, 51, 49], tandt: [0, 16, 42, 3], outputs: [52, 18, 54], updates: [4, 72, 73, 14, 15, 17, 21, 38] },
 
   // 品質マネジメント
   { psNum: 23, name: "品質マネジメントの計画", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], tandt: [0, 15, 1, 2], outputs: [1, 2, 3, 4, 5, 6, 7, 8, 9], updates: [] },
@@ -152,6 +152,7 @@ const inputsOutputsTableElements = [
   { ioNum: 73, name: "パフォーマンス測定ベースライン", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { ioNum: 74, name: "プロジェクトライフサイクルの記述", inputProcesses: [1, 3], outputProcesses: [1, 3], },
   { ioNum: 75, name: "開発アプローチ", inputProcesses: [1, 3], outputProcesses: [1, 3], },
+  { ioNum: 76, name: "リスクマネジメント計画書", inputProcesses: [1, 3], outputProcesses: [1, 3], }
 ];
 
 const tandtTableElements = [
