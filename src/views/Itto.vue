@@ -19,7 +19,7 @@ export default {
   computed: {
     routedProcessesElement() {
       const processesElements = this.$store.state.processesElements;
-      return processesElements[this.$route.params.value];
+      return processesElements[this.$route.params.psNum];
     }
   },
   components: {
