@@ -28,7 +28,10 @@
 export default {
   name: "OutputsTable",
   props: {
-    routedProcessesElement: String
+    routedProcessesElement: {
+      type: Object,
+      required: false
+    }
   }
 };
 </script>

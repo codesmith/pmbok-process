@@ -12,7 +12,7 @@
       >
         <td>
           <router-link
-            to="/processes"
+            :to="{ name: 'processes', params: { inNum: inputsTableElement.inNum }}"
             :class="{
               'active': routedProcessesElement.inputs.includes(index), 
               'inactive': !routedProcessesElement.inputs.includes(index)
@@ -28,7 +28,10 @@
 export default {
   name: "inputsTable",
   props: {
-    routedProcessesElement: String
+    routedProcessesElement: {
+      type: Object,
+      required: false
+    }
   }
 };
 </script>
