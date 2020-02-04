@@ -21,9 +21,9 @@
           <!-- プロジェクト憲章 -->
           <router-link
             :to="{ name: 'itto', params: { psNum: 0 }}"
+            class="inactive"
             :class="{
-              'active': selectedInputProcesses.includes(0), 
-              'inactive': !selectedInputProcesses.includes(0)
+              'active': selectedInputProcesses.includes(0)
             }"
           >{{this.$store.state.processesElements[0].name}}</router-link>
         </td>
@@ -585,13 +585,14 @@ export default {
   font-size: 110%;
   font-weight: bold;
 }
+.inactive {
+  color: darkgrey;
+}
 .active {
   color: red;
   font-size: large;
 }
-.inactive {
-  color: darkgrey;
-}
+
 thead > tr > td {
   text-align: center;
   font-weight: bold;
