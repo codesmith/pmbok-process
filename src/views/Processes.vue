@@ -11,9 +11,6 @@ import HomeTable from "@/components/HomeTable.vue";
 
 export default {
   name: "processes",
-  props: {
-    msg: String
-  },
   computed: {
     routedElement() {
       const inputsTableElements = this.$store.state.inputsTableElements;
