@@ -35,6 +35,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(1), 
+              'OutputActive': selectedOutputProcesses.includes(1)
             }"
           >{{this.$store.state.processesElements[1].name}}</router-link>
         </td>
@@ -45,6 +46,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(2), 
+              'OutputActive': selectedOutputProcesses.includes(2)
             }"
           >{{this.$store.state.processesElements[2].name}}</router-link>
           <br />
@@ -54,6 +56,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(3), 
+              'OutputActive': selectedOutputProcesses.includes(3)
             }"
           >{{this.$store.state.processesElements[3].name}}</router-link>
         </td>
@@ -64,6 +67,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(4), 
+              'OutputActive': selectedOutputProcesses.includes(4)
             }"
           >{{this.$store.state.processesElements[4].name}}</router-link>
           <br />
@@ -73,6 +77,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(5), 
+              'OutputActive': selectedOutputProcesses.includes(5)
             }"
           >{{this.$store.state.processesElements[5].name}}</router-link>
         </td>
@@ -83,6 +88,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(6), 
+              'OutputActive': selectedOutputProcesses.includes(6)
             }"
           >{{this.$store.state.processesElements[6].name}}</router-link>
         </td>
@@ -97,6 +103,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(7), 
+              'OutputActive': selectedOutputProcesses.includes(7)
             }"
           >{{this.$store.state.processesElements[7].name}}</router-link>
           <br />
@@ -106,6 +113,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(8), 
+              'OutputActive': selectedOutputProcesses.includes(8)
             }"
           >{{this.$store.state.processesElements[8].name}}</router-link>
           <br />
@@ -115,6 +123,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(9), 
+              'OutputActive': selectedOutputProcesses.includes(9)
             }"
           >{{this.$store.state.processesElements[9].name}}</router-link>
           <br />
@@ -124,6 +133,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(10), 
+              'OutputActive': selectedOutputProcesses.includes(10)
             }"
           >{{this.$store.state.processesElements[10].name}}</router-link>
         </td>
@@ -135,6 +145,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(11), 
+              'OutputActive': selectedOutputProcesses.includes(11)
             }"
           >{{this.$store.state.processesElements[11].name}}</router-link>
           <br />
@@ -144,6 +155,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(12), 
+              'OutputActive': selectedOutputProcesses.includes(12)
             }"
           >{{this.$store.state.processesElements[12].name}}</router-link>
         </td>
@@ -159,6 +171,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(13), 
+              'OutputActive': selectedOutputProcesses.includes(13)
             }"
           >{{this.$store.state.processesElements[13].name}}</router-link>
           <br />
@@ -168,6 +181,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(14), 
+              'OutputActive': selectedOutputProcesses.includes(14)
             }"
           >{{this.$store.state.processesElements[14].name}}</router-link>
           <br />
@@ -177,6 +191,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(15), 
+              'OutputActive': selectedOutputProcesses.includes(15)
             }"
           >{{this.$store.state.processesElements[15].name}}</router-link>
           <br />
@@ -186,6 +201,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(16), 
+              'OutputActive': selectedOutputProcesses.includes(16)
             }"
           >{{this.$store.state.processesElements[16].name}}</router-link>
           <br />
@@ -195,6 +211,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(17), 
+              'OutputActive': selectedOutputProcesses.includes(17)
             }"
           >{{this.$store.state.processesElements[17].name}}</router-link>
         </td>
@@ -206,6 +223,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(18), 
+              'OutputActive': selectedOutputProcesses.includes(18)
             }"
           >{{this.$store.state.processesElements[18].name}}</router-link>
         </td>
@@ -221,6 +239,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(19), 
+              'OutputActive': selectedOutputProcesses.includes(19)
             }"
           >{{this.$store.state.processesElements[19].name}}</router-link>
           <br />
@@ -230,6 +249,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(20), 
+              'OutputActive': selectedOutputProcesses.includes(20)
             }"
           >{{this.$store.state.processesElements[20].name}}</router-link>
           <br />
@@ -239,6 +259,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(21), 
+              'OutputActive': selectedOutputProcesses.includes(21)
             }"
           >{{this.$store.state.processesElements[21].name}}</router-link>
         </td>
@@ -250,6 +271,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(22), 
+              'OutputActive': selectedOutputProcesses.includes(22)
             }"
           >{{this.$store.state.processesElements[22].name}}</router-link>
         </td>
@@ -265,6 +287,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(23), 
+              'OutputActive': selectedOutputProcesses.includes(23)
             }"
           >{{this.$store.state.processesElements[23].name}}</router-link>
         </td>
@@ -275,6 +298,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(24), 
+              'OutputActive': selectedOutputProcesses.includes(24)
             }"
           >{{this.$store.state.processesElements[24].name}}</router-link>
         </td>
@@ -285,6 +309,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(25), 
+              'OutputActive': selectedOutputProcesses.includes(25)
             }"
           >{{this.$store.state.processesElements[25].name}}</router-link>
         </td>
@@ -300,6 +325,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(26), 
+              'OutputActive': selectedOutputProcesses.includes(26)
             }"
           >{{this.$store.state.processesElements[26].name}}</router-link>
           <br />
@@ -309,6 +335,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(27), 
+              'OutputActive': selectedOutputProcesses.includes(27)
             }"
           >{{this.$store.state.processesElements[27].name}}</router-link>
         </td>
@@ -319,6 +346,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(28), 
+              'OutputActive': selectedOutputProcesses.includes(28)
             }"
           >{{this.$store.state.processesElements[28].name}}</router-link>
           <br />
@@ -328,6 +356,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(29), 
+              'OutputActive': selectedOutputProcesses.includes(29)
             }"
           >{{this.$store.state.processesElements[29].name}}</router-link>
           <br />
@@ -337,6 +366,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(30), 
+              'OutputActive': selectedOutputProcesses.includes(30)
             }"
           >{{this.$store.state.processesElements[30].name}}</router-link>
         </td>
@@ -347,6 +377,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(31), 
+              'OutputActive': selectedOutputProcesses.includes(31)
             }"
           >{{this.$store.state.processesElements[31].name}}</router-link>
         </td>
@@ -362,6 +393,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(32), 
+              'OutputActive': selectedOutputProcesses.includes(32)
             }"
           >{{this.$store.state.processesElements[32].name}}</router-link>
         </td>
@@ -372,6 +404,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(33), 
+              'OutputActive': selectedOutputProcesses.includes(33)
             }"
           >{{this.$store.state.processesElements[33].name}}</router-link>
         </td>
@@ -382,6 +415,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(34), 
+              'OutputActive': selectedOutputProcesses.includes(34)
             }"
           >{{this.$store.state.processesElements[34].name}}</router-link>
         </td>
@@ -397,6 +431,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(35), 
+              'OutputActive': selectedOutputProcesses.includes(35)
             }"
           >{{this.$store.state.processesElements[35].name}}</router-link>
           <br />
@@ -406,6 +441,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(36), 
+              'OutputActive': selectedOutputProcesses.includes(36)
             }"
           >{{this.$store.state.processesElements[36].name}}</router-link>
           <br />
@@ -415,6 +451,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(37), 
+              'OutputActive': selectedOutputProcesses.includes(37)
             }"
           >{{this.$store.state.processesElements[37].name}}</router-link>
           <br />
@@ -424,6 +461,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(38), 
+              'OutputActive': selectedOutputProcesses.includes(38)
             }"
           >{{this.$store.state.processesElements[38].name}}</router-link>
           <br />
@@ -433,6 +471,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(39), 
+              'OutputActive': selectedOutputProcesses.includes(39)
             }"
           >{{this.$store.state.processesElements[39].name}}</router-link>
         </td>
@@ -443,6 +482,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(40), 
+              'OutputActive': selectedOutputProcesses.includes(40)
             }"
           >{{this.$store.state.processesElements[40].name}}</router-link>
         </td>
@@ -453,6 +493,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(41), 
+              'OutputActive': selectedOutputProcesses.includes(41)
             }"
           >{{this.$store.state.processesElements[41].name}}</router-link>
         </td>
@@ -468,6 +509,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(42), 
+              'OutputActive': selectedOutputProcesses.includes(42)
             }"
           >{{this.$store.state.processesElements[42].name}}</router-link>
         </td>
@@ -477,7 +519,8 @@
             :to="{ name: 'itto', params: { psNum: 43 }}"
             class="inactive"
             :class="{
-              'active': selectedInputProcesses.includes(43), 
+              'active': selectedInputProcesses.includes(43),
+              'OutputActive': selectedOutputProcesses.includes(43) 
             }"
           >{{this.$store.state.processesElements[43].name}}</router-link>
         </td>
@@ -488,6 +531,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(44), 
+              'OutputActive': selectedOutputProcesses.includes(44)
             }"
           >{{this.$store.state.processesElements[44].name}}</router-link>
         </td>
@@ -502,6 +546,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(45), 
+              'OutputActive': selectedOutputProcesses.includes(45)
             }"
           >{{this.$store.state.processesElements[45].name}}</router-link>
         </td>
@@ -512,6 +557,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(46), 
+              'OutputActive': selectedOutputProcesses.includes(46)
             }"
           >{{this.$store.state.processesElements[46].name}}</router-link>
         </td>
@@ -522,6 +568,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(47), 
+              'OutputActive': selectedOutputProcesses.includes(47)
             }"
           >{{this.$store.state.processesElements[47].name}}</router-link>
         </td>
@@ -532,6 +579,7 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(48), 
+              'OutputActive': selectedOutputProcesses.includes(48)
             }"
           >{{this.$store.state.processesElements[48].name}}</router-link>
         </td>
