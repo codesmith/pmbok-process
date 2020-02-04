@@ -37,13 +37,14 @@ export default {
 </script>
 
 <style scoped>
+.inactive {
+  color: darkgrey;
+}
 .active {
   color: red;
   font-size: large;
 }
-.inactive {
-  color: darkgrey;
-}
+
 a {
   text-decoration: none;
 }
