@@ -1,6 +1,6 @@
 <template>
   <div class="itto">
-    <p>{{routedProcessesElement.name}}</p>
+    <p>プロセス「{{routedProcessesElement.name}}」の I T T O</p>
     <InputsTable :routedProcessesElement="routedProcessesElement"></InputsTable>
     <TandtTable :routedProcessesElement="routedProcessesElement"></TandtTable>
     <OutputsTable :routedProcessesElement="routedProcessesElement"></OutputsTable>
