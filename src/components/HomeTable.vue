@@ -1,7 +1,5 @@
 <template>
   <div id="hello">
-    <p>{{selectedInputProcesses}}</p>
-    <p>{{routedElement.inNum}}</p>
     <table border="3" style="border-collapse: collapse; border-color:black">
       <thead>
         <tr bgcolor="orange">
@@ -22,6 +20,10 @@
           <!-- プロジェクト憲章 -->
           <router-link
             :to="{ name: 'itto', params: { psNum: 0 }}"
+            :class="{
+              'active': selectedInputProcesses.includes(0), 
+              'inactive': !selectedInputProcesses.includes(0)
+            }"
           >{{this.$store.state.processesElements[0].name}}</router-link>
         </td>
         <td>
@@ -351,16 +353,21 @@ export default {
   props: {
     routedElement: {
       type: Object,
-      required: false
+      required: false,
+      default() {
+        return {
+          inNum: 0,
+          outNum: 0,
+          ttNum: 0
+        };
+      }
     }
   },
+
   computed: {
     selectedInputProcesses() {
       const processesElements = this.$store.state.processesElements;
-      let routedInputNumber = 0;
-      if (this.routedElement) {
-        routedInputNumber = this.routedElement.inNum;
-      }
+      let routedInputNumber = this.routedElement.inNum;
       let filteredProcessesElements = processesElements.filter(
         processesElement => {
           return processesElement.inputs.includes(routedInputNumber);
@@ -384,6 +391,13 @@ export default {
   background-color: #66cc99;
   font-size: 110%;
   font-weight: bold;
+}
+.active {
+  color: red;
+  font-size: large;
+}
+.inactive {
+  color: darkgrey;
 }
 thead > tr > td {
   text-align: center;
