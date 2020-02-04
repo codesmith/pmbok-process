@@ -589,8 +589,7 @@ export default {
   color: darkgrey;
 }
 .active {
-  color: red;
-  font-size: large;
+  color: blue;
 }
 
 thead > tr > td {
