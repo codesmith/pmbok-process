@@ -23,7 +23,8 @@
             :to="{ name: 'itto', params: { psNum: 0 }}"
             class="inactive"
             :class="{
-              'active': selectedInputProcesses.includes(0)
+              'active': selectedInputProcesses.includes(0),
+              'OutputActive': selectedOutputProcesses.includes(0)
             }"
           >{{this.$store.state.processesElements[0].name}}</router-link>
         </td>
@@ -560,10 +561,15 @@ export default {
   computed: {
     selectedInputProcesses() {
       const processesElements = this.$store.state.processesElements;
-      let routedInputNumber = this.routedElement.inNum;
+      let routedIONumber = 0;
+      if ("inNum" in this.routedElement) {
+        routedIONumber = this.routedElement.inNum;
+      } else if ("outNum" in this.routedElement) {
+        routedIONumber = this.routedElement.outNum;
+      }
       let filteredProcessesElements = processesElements.filter(
         processesElement => {
-          return processesElement.inputs.includes(routedInputNumber);
+          return processesElement.inputs.includes(routedIONumber);
         }
       );
       let filteredProcessesArray = filteredProcessesElements.map(
@@ -571,7 +577,26 @@ export default {
           return filteredProcessesElement.psNum;
         }
       );
-
+      return filteredProcessesArray;
+    },
+    selectedOutputProcesses() {
+      const processesElements = this.$store.state.processesElements;
+      let routedIONumber = 0;
+      if ("inNum" in this.routedElement) {
+        routedIONumber = this.routedElement.inNum;
+      } else if ("outNum" in this.routedElement) {
+        routedIONumber = this.routedElement.outNum;
+      }
+      let filteredProcessesElements = processesElements.filter(
+        processesElement => {
+          return processesElement.outputs.includes(routedIONumber);
+        }
+      );
+      let filteredProcessesArray = filteredProcessesElements.map(
+        filteredProcessesElement => {
+          return filteredProcessesElement.psNum;
+        }
+      );
       return filteredProcessesArray;
     }
   }
@@ -590,6 +615,9 @@ export default {
 }
 .active {
   color: blue;
+}
+.OutputActive {
+  color: red;
 }
 
 thead > tr > td {
