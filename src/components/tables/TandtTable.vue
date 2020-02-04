@@ -12,7 +12,7 @@
       >
         <td>
           <router-link
-            to="/processes"
+            :to="{ name: 'processes', params: { ttNum: tandtTableElement.ttNum }}"
             :class="{
               'active': routedProcessesElement.tandt.includes(index), 
               'inactive': !routedProcessesElement.tandt.includes(index)

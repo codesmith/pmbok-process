@@ -12,7 +12,7 @@
       >
         <td>
           <router-link
-            to="/processes"
+            :to="{ name: 'processes', params: { outNum: outputsTableElement.outNum }}"
             :class="{
               'active': routedProcessesElement.outputs.includes(index),
               'inactive': !routedProcessesElement.outputs.includes(index)

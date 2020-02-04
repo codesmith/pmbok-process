@@ -345,7 +345,10 @@
 
 <script>
 export default {
-  name: "HomeTable"
+  name: "HomeTable",
+  props: {
+    routedElement: Object
+  }
 };
 </script>
 
