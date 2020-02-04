@@ -41,6 +41,9 @@ export default {
   color: red;
   font-size: large;
 }
+.inactive {
+  color: darkgrey;
+}
 a {
   text-decoration: none;
 }
