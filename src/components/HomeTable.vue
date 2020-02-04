@@ -1,5 +1,7 @@
 <template>
   <div id="hello">
+    <p>{{selectedInputProcesses}}</p>
+    <p>{{routedElement.inNum}}</p>
     <table border="3" style="border-collapse: collapse; border-color:black">
       <thead>
         <tr bgcolor="orange">
@@ -347,7 +349,31 @@
 export default {
   name: "HomeTable",
   props: {
-    routedElement: Object
+    routedElement: {
+      type: Object,
+      required: false
+    }
+  },
+  computed: {
+    selectedInputProcesses() {
+      const processesElements = this.$store.state.processesElements;
+      let routedInputNumber = 0;
+      if (this.routedElement) {
+        routedInputNumber = this.routedElement.inNum;
+      }
+      let filteredProcessesElements = processesElements.filter(
+        processesElement => {
+          return processesElement.inputs.includes(routedInputNumber);
+        }
+      );
+      let filteredProcessesArray = filteredProcessesElements.map(
+        filteredProcessesElement => {
+          return filteredProcessesElement.psNum;
+        }
+      );
+
+      return filteredProcessesArray;
+    }
   }
 };
 </script>
