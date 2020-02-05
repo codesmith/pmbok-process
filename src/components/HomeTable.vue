@@ -656,7 +656,7 @@ export default {
   computed: {
     selectedInputProcesses() {
       const processesElements = this.$store.state.processesElements;
-      let routedIONumber = 0;
+      let routedIONumber = -1;
       if ("inNum" in this.routedElement) {
         routedIONumber = this.routedElement.inNum;
       } else if ("outNum" in this.routedElement) {
@@ -694,7 +694,7 @@ export default {
     },
     selectedOutputProcesses() {
       const processesElements = this.$store.state.processesElements;
-      let routedIONumber = 0;
+      let routedIONumber = -1;
       if ("inNum" in this.routedElement) {
         routedIONumber = this.routedElement.inNum;
       } else if ("outNum" in this.routedElement) {
