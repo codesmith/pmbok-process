@@ -17,7 +17,7 @@
               'active': routedProcessesElement.outputs.includes(index),
               'inactive': !routedProcessesElement.outputs.includes(index)
             }"
-          >・{{index}}{{outputsTableElement.name}}</router-link>
+          >・{{outputsTableElement.name}}</router-link>
         </td>
       </tr>
     </table>
@@ -41,8 +41,10 @@ export default {
   color: darkgrey;
 }
 .active {
-  color: red;
-  font-size: large;
+  background-color: red;
+  color: white;
+  padding: 0.5% 5%;
+  border-radius: 40px 40px 40px 40px;
 }
 a {
   text-decoration: none;

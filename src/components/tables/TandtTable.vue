@@ -17,7 +17,7 @@
               'active': routedProcessesElement.tandt.includes(index), 
               'inactive': !routedProcessesElement.tandt.includes(index)
             }"
-          >・{{index}}{{tandtTableElement.name}}</router-link>
+          >・{{tandtTableElement.name}}</router-link>
         </td>
       </tr>
     </table>
@@ -41,8 +41,10 @@ export default {
   color: darkgrey;
 }
 .active {
-  color: red;
-  font-size: large;
+  background-color: green;
+  color: white;
+  padding: 0.5% 5%;
+  border-radius: 40px 40px 40px 40px;
 }
 
 a {
