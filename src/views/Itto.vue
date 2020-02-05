@@ -1,6 +1,6 @@
 <template>
   <div class="itto">
-    <p>プロセス「{{routedProcessesElement.name}}」の I T T O</p>
+    <p>{{routedProcessesElement.name}}</p>
     <InputsTable :routedProcessesElement="routedProcessesElement"></InputsTable>
     <TandtTable :routedProcessesElement="routedProcessesElement"></TandtTable>
     <OutputsTable :routedProcessesElement="routedProcessesElement"></OutputsTable>
@@ -19,7 +19,19 @@ export default {
   computed: {
     routedProcessesElement() {
       const processesElements = this.$store.state.processesElements;
-      return processesElements[this.$route.params.psNum];
+      let routedParams = {};
+      if (Object.keys(this.$route.params).length > 0) {
+        routedParams = this.$route.params;
+      } else {
+        return {
+          name:
+            "インプット、技術とツール、アウトプットをどれか選択してください。",
+          inputs: [-1],
+          tandt: [-1],
+          outputs: [-1]
+        };
+      }
+      return processesElements[routedParams.psNum];
     }
   },
   components: {
