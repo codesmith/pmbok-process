@@ -645,9 +645,9 @@ export default {
       required: false,
       default() {
         return {
-          inNum: 0,
-          outNum: 0,
-          ttNum: 0
+          inNum: -1,
+          outNum: -1,
+          ttNum: -1
         };
       }
     }

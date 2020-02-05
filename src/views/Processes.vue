@@ -16,7 +16,17 @@ export default {
       const inputsTableElements = this.$store.state.inputsTableElements;
       const tandtTableElements = this.$store.state.tandtTableElements;
       const outputsTableElements = this.$store.state.outputsTableElements;
-      const routedParams = this.$route.params;
+      let routedParams = {};
+      if (Object.keys(this.$route.params).length > 0) {
+        routedParams = this.$route.params;
+      } else {
+        return {
+          name: "プロセスをどれか選択してください。",
+          inNum: -1,
+          outNum: -1,
+          ttNum: -1
+        };
+      }
       if ("inNum" in routedParams) {
         return inputsTableElements[routedParams.inNum];
       } else if ("ttNum" in routedParams) {
