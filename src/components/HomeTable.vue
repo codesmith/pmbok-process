@@ -727,13 +727,22 @@ export default {
   color: darkgrey;
 }
 .active {
-  color: blue;
+  background-color: darkblue;
+  color: white;
+  padding: 1.5% 5%;
+  border-radius: 40px 40px 40px 40px;
 }
 .OutputActive {
-  color: red;
+  background-color: red;
+  color: white;
+  padding: 1.5% 5%;
+  border-radius: 40px 40px 40px 40px;
 }
 .TandtActive {
-  color: green;
+  background-color: green;
+  color: white;
+  padding: 1.5% 5%;
+  border-radius: 40px 40px 40px 40px;
 }
 
 thead > tr > td {
