@@ -6,7 +6,12 @@
       <router-link to="/itto">ITTO</router-link>|
       <div class="tooltip1">
         <p>色分け</p>
-        <div class="description1">説明を入力してください。</div>
+        <div class="description1">
+          青：インプット
+          <br />緑：ツールと技法
+          <br />赤：アウトプット
+          <br />紫：更新
+        </div>
       </div>
     </div>
     <transition mode="out-in">
@@ -75,6 +80,7 @@
   border-radius: 5px;
   background: #000;
   width: 100px;
+  text-align: left;
 }
 .description1:before {
   content: "";
