@@ -5,7 +5,7 @@
       <router-link to="/processes">Processes</router-link>|
       <router-link to="/itto">ITTO</router-link>|
       <div class="tooltip1">
-        <p>色分け</p>
+        <p>色の意味</p>
         <div class="description1">
           青：インプット
           <br />緑：ツールと技法
