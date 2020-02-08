@@ -31,6 +31,10 @@ export default {
     routedProcessesElement: {
       type: Object,
       required: false
+    },
+    showElement: {
+      type: Boolean,
+      required: false
     }
   },
   computed: {
@@ -38,8 +42,8 @@ export default {
       return function(i) {
         if (this.routedProcessesElement.inputs.includes(i)) {
           return true;
-          // }else if () {
-          //   return true;
+        } else if (this.showElement) {
+          return true;
         } else {
           return false;
         }

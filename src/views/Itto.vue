@@ -1,9 +1,12 @@
 <template>
   <div class="itto">
-    <p>{{routedProcessesElement.name}}</p>
-    <InputsTable :routedProcessesElement="routedProcessesElement"></InputsTable>
-    <TandtTable :routedProcessesElement="routedProcessesElement"></TandtTable>
-    <OutputsTable :routedProcessesElement="routedProcessesElement"></OutputsTable>
+    <p>
+      {{routedProcessesElement.name}}
+      <button @click="showElement = !showElement">表示/非表示</button>
+    </p>
+    <InputsTable :routedProcessesElement="routedProcessesElement" :showElement="showElement"></InputsTable>
+    <TandtTable :routedProcessesElement="routedProcessesElement" :showElement="showElement"></TandtTable>
+    <OutputsTable :routedProcessesElement="routedProcessesElement" :showElement="showElement"></OutputsTable>
   </div>
 </template>
 
@@ -13,6 +16,11 @@ import OutputsTable from "@/components/tables/OutputsTable.vue";
 import TandtTable from "@/components/tables/TandtTable.vue";
 export default {
   name: "itto",
+  data() {
+    return {
+      showElement: true
+    };
+  },
   props: {
     msg: String
   },

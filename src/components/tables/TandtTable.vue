@@ -10,7 +10,7 @@
         v-for="(tandtTableElement, index) in this.$store.state.tandtTableElements"
         :key="tandtTableElement.name"
       >
-        <td>
+        <td v-show="showTableElement(index)">
           <router-link
             :to="{ name: 'processes', params: { ttNum: tandtTableElement.ttNum }}"
             :class="{
@@ -31,6 +31,23 @@ export default {
     routedProcessesElement: {
       type: Object,
       required: false
+    },
+    showElement: {
+      type: Boolean,
+      required: false
+    }
+  },
+  computed: {
+    showTableElement: function() {
+      return function(i) {
+        if (this.routedProcessesElement.tandt.includes(i)) {
+          return true;
+        } else if (this.showElement) {
+          return true;
+        } else {
+          return false;
+        }
+      };
     }
   }
 };
