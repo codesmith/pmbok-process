@@ -16,7 +16,8 @@
               :to="{ name: 'processes', params: { outNum: outputsTableElement.outNum }}"
               :class="{
               'active': routedProcessesElement.outputs.includes(index),
-              'inactive': !routedProcessesElement.outputs.includes(index)
+              'inactive': !routedProcessesElement.outputs.includes(index),
+              'updates': routedProcessesElement.updates.includes(index)
             }"
             >・{{outputsTableElement.name}}</router-link>
           </td>
@@ -44,6 +45,8 @@ export default {
       return function(i) {
         if (this.routedProcessesElement.outputs.includes(i)) {
           return true;
+        } else if (this.routedProcessesElement.updates.includes(i)) {
+          return true;
         } else if (this.showElement) {
           return true;
         } else {
@@ -61,6 +64,12 @@ export default {
 }
 .active {
   background-color: red;
+  color: white;
+  padding: 0.5% 5%;
+  border-radius: 40px 40px 40px 40px;
+}
+.updates {
+  background-color: purple;
   color: white;
   padding: 0.5% 5%;
   border-radius: 40px 40px 40px 40px;

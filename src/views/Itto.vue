@@ -36,7 +36,8 @@ export default {
             "インプット、技術とツール、アウトプットをどれか選択してください。",
           inputs: [-1],
           tandt: [-1],
-          outputs: [-1]
+          outputs: [-1],
+          updates: [-1]
         };
       }
       return processesElements[routedParams.psNum];
