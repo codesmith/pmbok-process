@@ -10,15 +10,17 @@
         v-for="(tandtTableElement, index) in this.$store.state.tandtTableElements"
         :key="tandtTableElement.name"
       >
-        <td v-show="showTableElement(index)">
-          <router-link
-            :to="{ name: 'processes', params: { ttNum: tandtTableElement.ttNum }}"
-            :class="{
+        <transition name="slide">
+          <td v-show="showTableElement(index)">
+            <router-link
+              :to="{ name: 'processes', params: { ttNum: tandtTableElement.ttNum }}"
+              :class="{
               'active': routedProcessesElement.tandt.includes(index), 
               'inactive': !routedProcessesElement.tandt.includes(index)
             }"
-          >・{{tandtTableElement.name}}</router-link>
-        </td>
+            >・{{tandtTableElement.name}}</router-link>
+          </td>
+        </transition>
       </tr>
     </table>
   </div>
@@ -91,6 +93,32 @@ thead > tr > td {
 }
 td {
   text-align: left;
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+}
+.slide-leave,
+.slide-enter-to {
+  opacity: 1;
+}
+
+.slide-enter-active {
+  animation: slide-in 0.5s;
+  transition: opacity 0.5s;
+}
+.slide-leave-active {
+  animation: slide-in 0.5s reverse;
+  transition: opacity 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 </style>
 

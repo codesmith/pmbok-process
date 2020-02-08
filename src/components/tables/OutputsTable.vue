@@ -10,15 +10,17 @@
         v-for="(outputsTableElement, index) in this.$store.state.outputsTableElements"
         :key="outputsTableElement.name"
       >
-        <td v-show="showTableElement(index)">
-          <router-link
-            :to="{ name: 'processes', params: { outNum: outputsTableElement.outNum }}"
-            :class="{
+        <transition name="slide">
+          <td v-show="showTableElement(index)">
+            <router-link
+              :to="{ name: 'processes', params: { outNum: outputsTableElement.outNum }}"
+              :class="{
               'active': routedProcessesElement.outputs.includes(index),
               'inactive': !routedProcessesElement.outputs.includes(index)
             }"
-          >・{{outputsTableElement.name}}</router-link>
-        </td>
+            >・{{outputsTableElement.name}}</router-link>
+          </td>
+        </transition>
       </tr>
     </table>
   </div>
@@ -94,6 +96,32 @@ td {
   border-width: 1px;
   border-collapse: collapse;
   border-color: black;
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+}
+.slide-leave,
+.slide-enter-to {
+  opacity: 1;
+}
+
+.slide-enter-active {
+  animation: slide-in 0.5s;
+  transition: opacity 0.5s;
+}
+.slide-leave-active {
+  animation: slide-in 0.5s reverse;
+  transition: opacity 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 </style>
 
