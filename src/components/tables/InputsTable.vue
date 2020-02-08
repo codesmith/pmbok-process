@@ -1,6 +1,6 @@
 <template>
   <div id="InputsTable">
-    <table border="3" style="border-collapse: collapse; border-color:black">
+    <table border="2" style="border-collapse: collapse; border-color:black">
       <thead>
         <tr bgcolor="orange">
           <td class="tableTitle">インプット</td>
