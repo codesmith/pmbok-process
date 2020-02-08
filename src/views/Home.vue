@@ -43,6 +43,7 @@
       <p>
         下のリンクを押すと、スタートします。
         <br />
+        <br />
         <router-link to="/processes">PMBOKプロセス一覧</router-link>
       </p>
     </slide>
