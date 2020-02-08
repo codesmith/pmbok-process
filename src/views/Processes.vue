@@ -1,6 +1,6 @@
 <template>
   <div class="processes">
-    <p>{{routedElement.name}}</p>
+    <p>「{{routedElement.name}}」に関係するプロセス</p>
     <HomeTable :routedElement="routedElement"></HomeTable>
   </div>
 </template>
