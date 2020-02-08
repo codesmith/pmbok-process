@@ -36,7 +36,8 @@
             :class="{
               'active': selectedInputProcesses.includes(1), 
               'TandtActive': selectedTandtProcesses.includes(1),
-              'OutputActive': selectedOutputProcesses.includes(1)
+              'OutputActive': selectedOutputProcesses.includes(1),
+              'UpdateActive': selectedUpdateProcesses.includes(1),
             }"
           >{{this.$store.state.processesElements[1].name}}</router-link>
         </td>
@@ -48,7 +49,8 @@
             :class="{
               'active': selectedInputProcesses.includes(2), 
               'TandtActive': selectedTandtProcesses.includes(2),
-              'OutputActive': selectedOutputProcesses.includes(2)
+              'OutputActive': selectedOutputProcesses.includes(2),
+              'UpdateActive': selectedUpdateProcesses.includes(2),
             }"
           >{{this.$store.state.processesElements[2].name}}</router-link>
           <br />
@@ -59,7 +61,8 @@
             :class="{
               'active': selectedInputProcesses.includes(3),
               'TandtActive': selectedTandtProcesses.includes(3),
-              'OutputActive': selectedOutputProcesses.includes(3)
+              'OutputActive': selectedOutputProcesses.includes(3),
+              'UpdateActive': selectedUpdateProcesses.includes(3),
             }"
           >{{this.$store.state.processesElements[3].name}}</router-link>
         </td>
@@ -71,7 +74,8 @@
             :class="{
               'active': selectedInputProcesses.includes(4),
               'TandtActive': selectedTandtProcesses.includes(4),
-              'OutputActive': selectedOutputProcesses.includes(4)
+              'OutputActive': selectedOutputProcesses.includes(4),
+              'UpdateActive': selectedUpdateProcesses.includes(4),
             }"
           >{{this.$store.state.processesElements[4].name}}</router-link>
           <br />
@@ -82,7 +86,8 @@
             :class="{
               'active': selectedInputProcesses.includes(5),
               'TandtActive': selectedTandtProcesses.includes(5),
-              'OutputActive': selectedOutputProcesses.includes(5)
+              'OutputActive': selectedOutputProcesses.includes(5),
+              'UpdateActive': selectedUpdateProcesses.includes(5),
             }"
           >{{this.$store.state.processesElements[5].name}}</router-link>
         </td>
@@ -94,7 +99,8 @@
             :class="{
               'active': selectedInputProcesses.includes(6),
               'TandtActive': selectedTandtProcesses.includes(6),
-              'OutputActive': selectedOutputProcesses.includes(6)
+              'OutputActive': selectedOutputProcesses.includes(6),
+              'UpdateActive': selectedUpdateProcesses.includes(6),
             }"
           >{{this.$store.state.processesElements[6].name}}</router-link>
         </td>
@@ -110,7 +116,8 @@
             :class="{
               'active': selectedInputProcesses.includes(7),
               'TandtActive': selectedTandtProcesses.includes(7),
-              'OutputActive': selectedOutputProcesses.includes(7)
+              'OutputActive': selectedOutputProcesses.includes(7),
+              'UpdateActive': selectedUpdateProcesses.includes(7),
             }"
           >{{this.$store.state.processesElements[7].name}}</router-link>
           <br />
@@ -121,7 +128,8 @@
             :class="{
               'active': selectedInputProcesses.includes(8),
               'TandtActive': selectedTandtProcesses.includes(8),
-              'OutputActive': selectedOutputProcesses.includes(8)
+              'OutputActive': selectedOutputProcesses.includes(8),
+              'UpdateActive': selectedUpdateProcesses.includes(8),
             }"
           >{{this.$store.state.processesElements[8].name}}</router-link>
           <br />
@@ -132,7 +140,8 @@
             :class="{
               'active': selectedInputProcesses.includes(9),
               'TandtActive': selectedTandtProcesses.includes(9),
-              'OutputActive': selectedOutputProcesses.includes(9)
+              'OutputActive': selectedOutputProcesses.includes(9),
+              'UpdateActive': selectedUpdateProcesses.includes(9),
             }"
           >{{this.$store.state.processesElements[9].name}}</router-link>
           <br />
@@ -143,7 +152,8 @@
             :class="{
               'active': selectedInputProcesses.includes(10),
               'TandtActive': selectedTandtProcesses.includes(10),
-              'OutputActive': selectedOutputProcesses.includes(10)
+              'OutputActive': selectedOutputProcesses.includes(10),
+              'UpdateActive': selectedUpdateProcesses.includes(10),
             }"
           >{{this.$store.state.processesElements[10].name}}</router-link>
         </td>
@@ -156,7 +166,8 @@
             :class="{
               'active': selectedInputProcesses.includes(11),
               'TandtActive': selectedTandtProcesses.includes(11),
-              'OutputActive': selectedOutputProcesses.includes(11)
+              'OutputActive': selectedOutputProcesses.includes(11),
+              'UpdateActive': selectedUpdateProcesses.includes(11),
             }"
           >{{this.$store.state.processesElements[11].name}}</router-link>
           <br />
@@ -167,7 +178,8 @@
             :class="{
               'active': selectedInputProcesses.includes(12),
               'TandtActive': selectedTandtProcesses.includes(12),
-              'OutputActive': selectedOutputProcesses.includes(12)
+              'OutputActive': selectedOutputProcesses.includes(12),
+              'UpdateActive': selectedUpdateProcesses.includes(12),
             }"
           >{{this.$store.state.processesElements[12].name}}</router-link>
         </td>
@@ -184,7 +196,8 @@
             :class="{
               'active': selectedInputProcesses.includes(13),
               'TandtActive': selectedTandtProcesses.includes(13),
-              'OutputActive': selectedOutputProcesses.includes(13)
+              'OutputActive': selectedOutputProcesses.includes(13),
+              'UpdateActive': selectedUpdateProcesses.includes(13),
             }"
           >{{this.$store.state.processesElements[13].name}}</router-link>
           <br />
@@ -195,7 +208,8 @@
             :class="{
               'active': selectedInputProcesses.includes(14),
               'TandtActive': selectedTandtProcesses.includes(14),
-              'OutputActive': selectedOutputProcesses.includes(14)
+              'OutputActive': selectedOutputProcesses.includes(14),
+              'UpdateActive': selectedUpdateProcesses.includes(14),
             }"
           >{{this.$store.state.processesElements[14].name}}</router-link>
           <br />
@@ -206,7 +220,8 @@
             :class="{
               'active': selectedInputProcesses.includes(15),
               'TandtActive': selectedTandtProcesses.includes(15),
-              'OutputActive': selectedOutputProcesses.includes(15)
+              'OutputActive': selectedOutputProcesses.includes(15),
+              'UpdateActive': selectedUpdateProcesses.includes(16),
             }"
           >{{this.$store.state.processesElements[15].name}}</router-link>
           <br />
@@ -217,7 +232,8 @@
             :class="{
               'active': selectedInputProcesses.includes(16),
               'TandtActive': selectedTandtProcesses.includes(16),
-              'OutputActive': selectedOutputProcesses.includes(16)
+              'OutputActive': selectedOutputProcesses.includes(16),
+              'UpdateActive': selectedUpdateProcesses.includes(16),
             }"
           >{{this.$store.state.processesElements[16].name}}</router-link>
           <br />
@@ -228,7 +244,8 @@
             :class="{
               'active': selectedInputProcesses.includes(17), 
               'TandtActive': selectedTandtProcesses.includes(17),
-              'OutputActive': selectedOutputProcesses.includes(17)
+              'OutputActive': selectedOutputProcesses.includes(17),
+              'UpdateActive': selectedUpdateProcesses.includes(17),
             }"
           >{{this.$store.state.processesElements[17].name}}</router-link>
         </td>
@@ -241,7 +258,8 @@
             :class="{
               'active': selectedInputProcesses.includes(18), 
               'TandtActive': selectedTandtProcesses.includes(18),
-              'OutputActive': selectedOutputProcesses.includes(18)
+              'OutputActive': selectedOutputProcesses.includes(18),
+              'UpdateActive': selectedUpdateProcesses.includes(18),
             }"
           >{{this.$store.state.processesElements[18].name}}</router-link>
         </td>
@@ -258,7 +276,8 @@
             :class="{
               'active': selectedInputProcesses.includes(19), 
               'TandtActive': selectedTandtProcesses.includes(19),
-              'OutputActive': selectedOutputProcesses.includes(19)
+              'OutputActive': selectedOutputProcesses.includes(19),
+              'UpdateActive': selectedUpdateProcesses.includes(19),
             }"
           >{{this.$store.state.processesElements[19].name}}</router-link>
           <br />
@@ -269,7 +288,8 @@
             :class="{
               'active': selectedInputProcesses.includes(20), 
               'TandtActive': selectedTandtProcesses.includes(20),
-              'OutputActive': selectedOutputProcesses.includes(20)
+              'OutputActive': selectedOutputProcesses.includes(20),
+              'UpdateActive': selectedUpdateProcesses.includes(20),
             }"
           >{{this.$store.state.processesElements[20].name}}</router-link>
           <br />
@@ -279,7 +299,9 @@
             class="inactive"
             :class="{
               'active': selectedInputProcesses.includes(21), 
-              'OutputActive': selectedOutputProcesses.includes(21)
+              'TandtActive': selectedTandtProcesses.includes(21),
+              'OutputActive': selectedOutputProcesses.includes(21),
+              'UpdateActive': selectedUpdateProcesses.includes(21),
             }"
           >{{this.$store.state.processesElements[21].name}}</router-link>
         </td>
@@ -292,7 +314,8 @@
             :class="{
               'active': selectedInputProcesses.includes(22), 
               'TandtActive': selectedTandtProcesses.includes(22),
-              'OutputActive': selectedOutputProcesses.includes(22)
+              'OutputActive': selectedOutputProcesses.includes(22),
+              'UpdateActive': selectedUpdateProcesses.includes(22),
             }"
           >{{this.$store.state.processesElements[22].name}}</router-link>
         </td>
@@ -309,7 +332,8 @@
             :class="{
               'active': selectedInputProcesses.includes(23), 
               'TandtActive': selectedTandtProcesses.includes(23),
-              'OutputActive': selectedOutputProcesses.includes(23)
+              'OutputActive': selectedOutputProcesses.includes(23),
+              'UpdateActive': selectedUpdateProcesses.includes(23),
             }"
           >{{this.$store.state.processesElements[23].name}}</router-link>
         </td>
@@ -321,7 +345,8 @@
             :class="{
               'active': selectedInputProcesses.includes(24), 
               'TandtActive': selectedTandtProcesses.includes(24),
-              'OutputActive': selectedOutputProcesses.includes(24)
+              'OutputActive': selectedOutputProcesses.includes(24),
+              'UpdateActive': selectedUpdateProcesses.includes(24),
             }"
           >{{this.$store.state.processesElements[24].name}}</router-link>
         </td>
@@ -333,7 +358,8 @@
             :class="{
               'active': selectedInputProcesses.includes(25), 
               'TandtActive': selectedTandtProcesses.includes(25),
-              'OutputActive': selectedOutputProcesses.includes(25)
+              'OutputActive': selectedOutputProcesses.includes(25),
+              'UpdateActive': selectedUpdateProcesses.includes(25),
             }"
           >{{this.$store.state.processesElements[25].name}}</router-link>
         </td>
@@ -350,7 +376,8 @@
             :class="{
               'active': selectedInputProcesses.includes(26), 
               'TandtActive': selectedTandtProcesses.includes(26),
-              'OutputActive': selectedOutputProcesses.includes(26)
+              'OutputActive': selectedOutputProcesses.includes(26),
+              'UpdateActive': selectedUpdateProcesses.includes(26),
             }"
           >{{this.$store.state.processesElements[26].name}}</router-link>
           <br />
@@ -361,7 +388,8 @@
             :class="{
               'active': selectedInputProcesses.includes(27), 
               'TandtActive': selectedTandtProcesses.includes(27),
-              'OutputActive': selectedOutputProcesses.includes(27)
+              'OutputActive': selectedOutputProcesses.includes(27),
+              'UpdateActive': selectedUpdateProcesses.includes(27),
             }"
           >{{this.$store.state.processesElements[27].name}}</router-link>
         </td>
@@ -373,7 +401,8 @@
             :class="{
               'active': selectedInputProcesses.includes(28), 
               'TandtActive': selectedTandtProcesses.includes(28),
-              'OutputActive': selectedOutputProcesses.includes(28)
+              'OutputActive': selectedOutputProcesses.includes(28),
+              'UpdateActive': selectedUpdateProcesses.includes(28),
             }"
           >{{this.$store.state.processesElements[28].name}}</router-link>
           <br />
@@ -384,7 +413,8 @@
             :class="{
               'active': selectedInputProcesses.includes(29), 
               'TandtActive': selectedTandtProcesses.includes(29),
-              'OutputActive': selectedOutputProcesses.includes(29)
+              'OutputActive': selectedOutputProcesses.includes(29),
+              'UpdateActive': selectedUpdateProcesses.includes(28),
             }"
           >{{this.$store.state.processesElements[29].name}}</router-link>
           <br />
@@ -395,7 +425,8 @@
             :class="{
               'active': selectedInputProcesses.includes(30), 
               'TandtActive': selectedTandtProcesses.includes(30),
-              'OutputActive': selectedOutputProcesses.includes(30)
+              'OutputActive': selectedOutputProcesses.includes(30),
+              'UpdateActive': selectedUpdateProcesses.includes(30),
             }"
           >{{this.$store.state.processesElements[30].name}}</router-link>
         </td>
@@ -407,7 +438,8 @@
             :class="{
               'active': selectedInputProcesses.includes(31), 
               'TandtActive': selectedTandtProcesses.includes(31),
-              'OutputActive': selectedOutputProcesses.includes(31)
+              'OutputActive': selectedOutputProcesses.includes(31),
+              'UpdateActive': selectedUpdateProcesses.includes(31),
             }"
           >{{this.$store.state.processesElements[31].name}}</router-link>
         </td>
@@ -424,7 +456,8 @@
             :class="{
               'active': selectedInputProcesses.includes(32), 
               'TandtActive': selectedTandtProcesses.includes(32),
-              'OutputActive': selectedOutputProcesses.includes(32)
+              'OutputActive': selectedOutputProcesses.includes(32),
+              'UpdateActive': selectedUpdateProcesses.includes(32),
             }"
           >{{this.$store.state.processesElements[32].name}}</router-link>
         </td>
@@ -436,7 +469,8 @@
             :class="{
               'active': selectedInputProcesses.includes(33), 
               'TandtActive': selectedTandtProcesses.includes(33),
-              'OutputActive': selectedOutputProcesses.includes(33)
+              'OutputActive': selectedOutputProcesses.includes(33),
+              'UpdateActive': selectedUpdateProcesses.includes(33),
             }"
           >{{this.$store.state.processesElements[33].name}}</router-link>
         </td>
@@ -448,7 +482,8 @@
             :class="{
               'active': selectedInputProcesses.includes(34),
               'TandtActive': selectedTandtProcesses.includes(34), 
-              'OutputActive': selectedOutputProcesses.includes(34)
+              'OutputActive': selectedOutputProcesses.includes(34),
+              'UpdateActive': selectedUpdateProcesses.includes(34),
             }"
           >{{this.$store.state.processesElements[34].name}}</router-link>
         </td>
@@ -465,7 +500,8 @@
             :class="{
               'active': selectedInputProcesses.includes(35), 
               'TandtActive': selectedTandtProcesses.includes(35),
-              'OutputActive': selectedOutputProcesses.includes(35)
+              'OutputActive': selectedOutputProcesses.includes(35),
+              'UpdateActive': selectedUpdateProcesses.includes(35),
             }"
           >{{this.$store.state.processesElements[35].name}}</router-link>
           <br />
@@ -476,7 +512,8 @@
             :class="{
               'active': selectedInputProcesses.includes(36), 
               'TandtActive': selectedTandtProcesses.includes(36),
-              'OutputActive': selectedOutputProcesses.includes(36)
+              'OutputActive': selectedOutputProcesses.includes(36),
+              'UpdateActive': selectedUpdateProcesses.includes(36),
             }"
           >{{this.$store.state.processesElements[36].name}}</router-link>
           <br />
@@ -487,7 +524,8 @@
             :class="{
               'active': selectedInputProcesses.includes(37), 
               'TandtActive': selectedTandtProcesses.includes(37),
-              'OutputActive': selectedOutputProcesses.includes(37)
+              'OutputActive': selectedOutputProcesses.includes(37),
+              'UpdateActive': selectedUpdateProcesses.includes(37),
             }"
           >{{this.$store.state.processesElements[37].name}}</router-link>
           <br />
@@ -498,7 +536,8 @@
             :class="{
               'active': selectedInputProcesses.includes(38), 
               'TandtActive': selectedTandtProcesses.includes(38),
-              'OutputActive': selectedOutputProcesses.includes(38)
+              'OutputActive': selectedOutputProcesses.includes(38),
+              'UpdateActive': selectedUpdateProcesses.includes(38),
             }"
           >{{this.$store.state.processesElements[38].name}}</router-link>
           <br />
@@ -509,7 +548,8 @@
             :class="{
               'active': selectedInputProcesses.includes(39), 
               'TandtActive': selectedTandtProcesses.includes(39),
-              'OutputActive': selectedOutputProcesses.includes(39)
+              'OutputActive': selectedOutputProcesses.includes(39),
+              'UpdateActive': selectedUpdateProcesses.includes(39),
             }"
           >{{this.$store.state.processesElements[39].name}}</router-link>
         </td>
@@ -521,7 +561,8 @@
             :class="{
               'active': selectedInputProcesses.includes(40), 
               'TandtActive': selectedTandtProcesses.includes(40),
-              'OutputActive': selectedOutputProcesses.includes(40)
+              'OutputActive': selectedOutputProcesses.includes(40),
+              'UpdateActive': selectedUpdateProcesses.includes(40),
             }"
           >{{this.$store.state.processesElements[40].name}}</router-link>
         </td>
@@ -533,7 +574,8 @@
             :class="{
               'active': selectedInputProcesses.includes(41), 
               'TandtActive': selectedTandtProcesses.includes(41),
-              'OutputActive': selectedOutputProcesses.includes(41)
+              'OutputActive': selectedOutputProcesses.includes(41),
+              'UpdateActive': selectedUpdateProcesses.includes(41),
             }"
           >{{this.$store.state.processesElements[41].name}}</router-link>
         </td>
@@ -550,7 +592,8 @@
             :class="{
               'active': selectedInputProcesses.includes(42), 
               'TandtActive': selectedTandtProcesses.includes(42),
-              'OutputActive': selectedOutputProcesses.includes(42)
+              'OutputActive': selectedOutputProcesses.includes(42),
+              'UpdateActive': selectedUpdateProcesses.includes(42),
             }"
           >{{this.$store.state.processesElements[42].name}}</router-link>
         </td>
@@ -562,7 +605,8 @@
             :class="{
               'active': selectedInputProcesses.includes(43),
               'TandtActive': selectedTandtProcesses.includes(43),
-              'OutputActive': selectedOutputProcesses.includes(43) 
+              'OutputActive': selectedOutputProcesses.includes(43),
+              'UpdateActive': selectedUpdateProcesses.includes(43),
             }"
           >{{this.$store.state.processesElements[43].name}}</router-link>
         </td>
@@ -574,7 +618,8 @@
             :class="{
               'active': selectedInputProcesses.includes(44), 
               'TandtActive': selectedTandtProcesses.includes(44),
-              'OutputActive': selectedOutputProcesses.includes(44)
+              'OutputActive': selectedOutputProcesses.includes(44),
+              'UpdateActive': selectedUpdateProcesses.includes(44),
             }"
           >{{this.$store.state.processesElements[44].name}}</router-link>
         </td>
@@ -590,7 +635,8 @@
             :class="{
               'active': selectedInputProcesses.includes(45), 
               'TandtActive': selectedTandtProcesses.includes(45),
-              'OutputActive': selectedOutputProcesses.includes(45)
+              'OutputActive': selectedOutputProcesses.includes(45),
+              'UpdateActive': selectedUpdateProcesses.includes(45),
             }"
           >{{this.$store.state.processesElements[45].name}}</router-link>
         </td>
@@ -602,7 +648,8 @@
             :class="{
               'active': selectedInputProcesses.includes(46), 
               'TandtActive': selectedTandtProcesses.includes(46),
-              'OutputActive': selectedOutputProcesses.includes(46)
+              'OutputActive': selectedOutputProcesses.includes(46),
+              'UpdateActive': selectedUpdateProcesses.includes(46),
             }"
           >{{this.$store.state.processesElements[46].name}}</router-link>
         </td>
@@ -614,7 +661,8 @@
             :class="{
               'active': selectedInputProcesses.includes(47), 
               'TandtActive': selectedTandtProcesses.includes(47),
-              'OutputActive': selectedOutputProcesses.includes(47)
+              'OutputActive': selectedOutputProcesses.includes(47),
+              'UpdateActive': selectedUpdateProcesses.includes(47),
             }"
           >{{this.$store.state.processesElements[47].name}}</router-link>
         </td>
@@ -626,7 +674,8 @@
             :class="{
               'active': selectedInputProcesses.includes(48), 
               'TandtActive': selectedTandtProcesses.includes(48),
-              'OutputActive': selectedOutputProcesses.includes(48)
+              'OutputActive': selectedOutputProcesses.includes(48),
+              'UpdateActive': selectedUpdateProcesses.includes(48),
             }"
           >{{this.$store.state.processesElements[48].name}}</router-link>
         </td>
@@ -711,6 +760,26 @@ export default {
         }
       );
       return filteredProcessesArray;
+    },
+    selectedUpdateProcesses() {
+      const processesElements = this.$store.state.processesElements;
+      let routedIONumber = -1;
+      if ("inNum" in this.routedElement) {
+        routedIONumber = this.routedElement.inNum;
+      } else if ("outNum" in this.routedElement) {
+        routedIONumber = this.routedElement.outNum;
+      }
+      let filteredProcessesElements = processesElements.filter(
+        processesElement => {
+          return processesElement.updates.includes(routedIONumber);
+        }
+      );
+      let filteredProcessesArray = filteredProcessesElements.map(
+        filteredProcessesElement => {
+          return filteredProcessesElement.psNum;
+        }
+      );
+      return filteredProcessesArray;
     }
   }
 };
@@ -740,6 +809,12 @@ export default {
 }
 .TandtActive {
   background-color: green;
+  color: white;
+  padding: 1.5% 5%;
+  border-radius: 40px 40px 40px 40px;
+}
+.UpdateActive {
+  background-color: rgb(115, 17, 126);
   color: white;
   padding: 1.5% 5%;
   border-radius: 40px 40px 40px 40px;
