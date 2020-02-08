@@ -5,7 +5,9 @@
       <router-link to="/processes">Processes</router-link>|
       <router-link to="/itto">ITTO</router-link>
     </div>
-    <router-view />
+    <transition mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -33,5 +35,14 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s;
+}
+.v-enter,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
