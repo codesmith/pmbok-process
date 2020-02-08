@@ -1,13 +1,50 @@
 <template>
   <hooper>
-    <slide>slide 1</slide>
-    <slide>slide 2</slide>
-    <slide>slide 3</slide>
-    <slide>slide 4</slide>
-    <slide>slide 5</slide>
     <slide>
-      <p>下のリンクを押すと、スタートします。</p>
-      <router-link to="/processes">PMBOKプロセス一覧</router-link>|
+      <p>
+        これはPMBOK第6版の勉強用のサイトです。
+        <br />次のスライドから説明が始まります。
+        <br />
+        <br />
+        <router-link to="/processes">説明を飛ばして始める</router-link>
+      </p>
+    </slide>
+    <slide>
+      PMBOK第6版では、合計49のプロセスが
+      <br />定義されています。
+      <br />各プロセスは10の知識エリアと5つのプロセス群にそれぞれ分類されます。
+    </slide>
+    <slide>
+      プロセスに入ってきた"インプット"は、
+      <br />"アウトプット"に変換されます。
+      <br />この時に"ツールと技法"が使用されます。
+      <br />
+      <br />↑上の3つを総称してITTOと呼びます。
+    </slide>
+    <slide>
+      <p>
+        PMBOKでは
+        <br />「あるプロセスAから出力されたアウトプットが、プロセスBとプロセスCのインプットになっている。」、
+        <br />「プロセスD、E、Fで同じツールと技法が使用されている」
+        <br />……と、いうことが頻繁に発生します。
+      </p>
+    </slide>
+    <slide>
+      <p>
+        このサイトでは
+        <br />「あるプロセスのITTOはそれぞれ何があるか。」、
+        <br />逆に「あるITTOが、どのプロセスで登場するか。」
+        <br />について、整理しました。
+        <br />
+        <br />皆様の勉強のお役に立てれば幸いです。
+      </p>
+    </slide>
+    <slide>
+      <p>
+        下のリンクを押すと、スタートします。
+        <br />
+        <router-link to="/processes">PMBOKプロセス一覧</router-link>
+      </p>
     </slide>
     <hooper-pagination slot="hooper-addons"></hooper-pagination>
   </hooper>
@@ -38,7 +75,7 @@ export default {
 .hooper-slide {
   background-color: #62caaa;
   padding: 20px;
-  /* display: flex; */
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
