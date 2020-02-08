@@ -4,6 +4,10 @@ import router from '../router';
 
 Vue.use(Vuex);
 
+let tougouHenkouKanriUpdates = [...Array(79).keys()].map(i => ++i)
+tougouHenkouKanriUpdates.splice(53, 2)  // 変更要求(インプット)と承認済み変更要求(アウトプット)は除外
+tougouHenkouKanriUpdates.splice(15, 1)  // 変更ログ(アウトプット)は除外
+
 const processesTable = [
   // 統合マネジメント
   { psNum: 0, name: "プロジェクト憲章の作成", inputs: [46, 45, 47, 48, 49], tandt: [0, 15, 1, 2], outputs: [0, 14], updates: [] },
@@ -11,7 +15,7 @@ const processesTable = [
   { psNum: 2, name: "プロジェクト作業の指揮マネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 21, 22, 25, 26, 34, 38, 39, 55, 48, 49], tandt: [0, 3, 2], outputs: [50, 51, 20, 54], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 14, 21, 33, 38, 42, 49] },
   { psNum: 3, name: "プロジェクト知識のマネジメント", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 21, 29, 35, 42, 50, 48, 49], tandt: [0, 13, 14, 1], outputs: [21], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 49] },
   { psNum: 4, name: "プロジェクト作業の監視・コントロール", inputs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 21, 18, 20, 22, 32, 38, 39, 52, 47, 48, 49], tandt: [0, 16, 18, 2], outputs: [53, 54,], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9, 18, 20, 21, 38, 41] },
-  { psNum: 5, name: "統合変更管理", inputs: [10, 11, 1, 71, 72, 15, 34, 39, 53, 54, 48, 49], tandt: [0, 4, 16, 18, 2], outputs: [55], updates: [...Array(69).keys()].map(i => ++i) },
+  { psNum: 5, name: "統合変更管理", inputs: [10, 11, 1, 71, 72, 15, 34, 39, 53, 54, 48, 49], tandt: [0, 4, 16, 18, 2], outputs: [16, 55], updates: tougouHenkouKanriUpdates },
   { psNum: 6, name: "プロジェクトやフェーズの終結", inputs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 16, 20, 21, 22, 25, 30, 32, 33, 38, 39, 56, 45, 46, 47, 61, 49], tandt: [0, 16, 2], outputs: [], updates: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
 
   // スコープマネジメント
@@ -51,7 +55,7 @@ const processesTable = [
 
   // コミュニケーションマネジメント
   { psNum: 32, name: "コミュニケーションマネジメントの計画", inputs: [0, 6, 9, 33, 42, 48, 49], tandt: [0, 9, 8, 10, 11, 1, 17, 2], outputs: [7], updates: [26, 42] },
-  { psNum: 33, name: "コミュニケーションのマネジメント", inputs: [6, 7, 9, 54, 20, 21, 32, 39, 42, 53, 48, 49], tandt: [8, 11, 12, 3, 53, 1, 2], outputs: [25], updates: [7, 9, 20, 21, 26, 42, 38, 49] },
+  { psNum: 33, name: "コミュニケーションのマネジメント", inputs: [6, 7, 9, 54, 20, 21, 32, 39, 42, 48, 49], tandt: [8, 11, 12, 3, 53, 1, 2], outputs: [25, 54], updates: [7, 9, 20, 21, 26, 42, 38, 49] },
   { psNum: 34, name: "コミュニケーションの監視", inputs: [6, 7, 9, 20, 21, 25, 51, 48, 49], tandt: [0, 3, 17, 1, 2], outputs: [52, 54], updates: [7, 9, 20, 21, 42] },
 
   // リスクマネジメント
