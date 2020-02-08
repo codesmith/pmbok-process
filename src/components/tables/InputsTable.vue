@@ -10,7 +10,7 @@
         v-for="(inputsTableElement, index) in this.$store.state.inputsTableElements"
         :key="inputsTableElement.name"
       >
-        <td>
+        <td v-show="showTableElement(index)">
           <router-link
             :to="{ name: 'processes', params: { inNum: inputsTableElement.inNum }}"
             :class="{
@@ -31,6 +31,19 @@ export default {
     routedProcessesElement: {
       type: Object,
       required: false
+    }
+  },
+  computed: {
+    showTableElement: function() {
+      return function(i) {
+        if (this.routedProcessesElement.inputs.includes(i)) {
+          return true;
+          // }else if () {
+          //   return true;
+        } else {
+          return false;
+        }
+      };
     }
   }
 };
