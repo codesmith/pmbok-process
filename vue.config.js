@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/pmbok-process',
+  publicPath: '',
   outputDir: 'docs',
   filenameHashing: false,
   productionSourceMap: false,
